@@ -13,6 +13,7 @@ h1, h2, h3, h4, h5, h6{
 a, a:hover{
     text-decoration: none;
 }
+
 /* ******************************************************
             Lucid CSS code start here
 ********************************************************/
@@ -41,11 +42,8 @@ a, a:hover{
 /* header start */
 .header-section{
     width: 100%;
-    background: url("../image/Home.png") center bottom no-repeat;
+    background: url("../image/Home.png") center top no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center top;
-    height: 640px;
 }
 .menu{
     width: 100%;
@@ -138,11 +136,7 @@ a, a:hover{
     border-color: #008ed6;
 }
 
-.banner .bimg{
-    height: 550px;
-    width: 500px;
-    margin-left: 50px;
-}
+
 /* banner end */
 
 /* feature-section start */
