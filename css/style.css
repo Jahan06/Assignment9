@@ -53,7 +53,7 @@ a, a:hover{
 }
 .menu .navbar-light .navbar-nav .nav-link{
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     text-transform: capitalize;
     margin: 0px 0px 0px 20px;
@@ -66,6 +66,10 @@ a, a:hover{
 .menu .navbar-light .navbar-nav .nav-link.active{
     background: url("../image/border.png") center bottom no-repeat;
     background-size: auto;
+}
+.menu .navbar-light .navbar-toggler{
+    color: #fff;
+    border-color: #fff;
 }
 /* header end */
 
@@ -160,16 +164,24 @@ a, a:hover{
     border-radius: 50%;
     border: 1px solid  #eee;
 }
+
 .inner-feature h4{
     font-size: 23px;
     font-weight: 600;
     color: #000;
 }
-.inner-feature p{
-    font-size: 14px;
+.inner-feature:hover{
+    color: black;
+    background: whitesmoke;
+    border-color: rgb(214, 213, 213);
+    border-radius: 20px;
+}
+.inner-feature p {
+    font-size: 17px;
     font-weight: 400;
     color: #999;
 }
+
 /* feature-sectuin end */
 /* about-long section start */
 .aboutlong-section{
@@ -184,7 +196,7 @@ a, a:hover{
     font-size: 48px;
 }
 .aboutlong-section p{
-    font-size: 16px;
+    font-size: 18px;
     color: #999;
 }
 .aboutlong-section .icon-list{
@@ -195,13 +207,17 @@ a, a:hover{
 }
 .aboutlong-section .icon-list li{
     list-style: none;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     line-height: 20px;
     margin: 0px 0px 10px;
 }
+
 .aboutlong-section .icon-list li a{
     color: black;
+}
+.aboutlong-section .icon-list li a:hover{
+    color: #008ed6;
 }
 .aboutlong-section .icon-list li img{
     color: #008ed6;
@@ -219,7 +235,7 @@ a, a:hover{
     font-size: 40px;
 }
 .aboutshort-section p{
-    font-size: 16px;
+    font-size: 18px;
     color: #999;
 }
 /* aboutshort-section end */
@@ -367,7 +383,7 @@ a, a:hover{
     font-weight: 500;
 }
 .price-box .price-inner p{
-    font-size: 14px;
+    font-size: 16px;
     color: #999;
     margin: -6px 0px 0px ;
 }
@@ -376,7 +392,7 @@ a, a:hover{
     padding: 35px;
 }
 .price-box .price-content p{
-    font-size: 16px;
+    font-size: 17px;
     line-height: 26px;
     color: #999;
     margin-bottom: 35px;
@@ -426,12 +442,12 @@ a, a:hover{
     text-align: center;
 }
 .contact-us .info .fa{
-    font-size: 32px;
+    font-size: 35px;
     color: #008ed6;
     margin-bottom: 20px;
 }
 .contact-us .info p{
-    font-size: 14px;
+    font-size: 16px;
     color: #999;
 }
 /* contact-section end */
@@ -448,7 +464,7 @@ a, a:hover{
 .main-form .form-control{
     width: 100%;
     padding: 13px;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
     color: #999;
@@ -502,3 +518,536 @@ a, a:hover{
     color: #008ed6;
 }
 /* footer-section end */
+/* **********************************************
+        Responsive media query code
+*************************************************/
+/* mobile phone start */
+
+@media ( min-width: 320px ){
+    .menu .navbar-light .navbar-nav .nav-link.active{
+        background: url(../image/border.png) left bottom no-repeat;
+        background-size: auto;
+    }
+
+.menu .navbar-light .navbar-nav .nav-link:hover {
+    background: url(../image/border.png) left bottom no-repeat;
+    background-size: auto;
+}
+.menu .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0px 0px 0px 20px;
+}
+.banner{
+    padding: 40px 0px 55px;
+}
+.banner h2 {
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.banner p {
+    font-size: 13px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #999;
+} 
+.inner-btn{
+    padding: 20px 0px 0px;
+}
+.inner-btn .btn-primary{
+    padding: 10px;
+    font-size: 12px;
+}
+.inner-btn .btn-info{
+    padding: 10px;
+    font-size: 12px;
+}
+.inner-feature:hover{
+    color: black;
+    background: whitesmoke;
+    border-color: rgb(214, 213, 213);
+    border-radius: 20px;
+}
+.aboutshort-section .title h2 {
+    font-size: 40px;
+    line-height: 50px;
+}
+.aboutlong-section .title h2 {
+    font-size: 35px;
+}
+.title h2 {
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #000;
+    margin-bottom: 15px;
+}
+.price-section .price-inner h1 {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    color: #000;
+}
+.price-section .price-head h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    color: #000;
+    transition: .5s;
+}
+}
+/* molibe phone end */
+/* mobile phone & low resulation tablet start */
+@media ( min-width: 481px ){
+    .menu .navbar-light .navbar-nav .nav-link:hover {
+        background: url(../image/border.png) left bottom no-repeat;
+        background-size: auto;
+    }
+    .menu .navbar-light .navbar-nav .nav-link.active{
+        background: url(../image/border.png) left bottom no-repeat;
+        background-size: auto;
+    }
+    .title h2 {
+        font-size: 32px;
+        line-height: 42px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #000;
+        margin-bottom: 15px;
+    }
+    .aboutshort-section .title h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .see-section h2 span {
+        font-weight: 500;
+    }
+    .see-section h2 {
+        font-size: 28px;
+        font-weight: 300;
+        margin-bottom: 0px;
+        color: #fff;
+        margin-top: 10px;
+    }
+    .see-section .inner-btn .btn-info {
+        padding: 12px;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+        color: #fff;
+        background: transparent;
+        border-color: #999;
+        border-radius: 5px;
+        transition: .5s;
+    }
+    .see-section .inner-btn .btn-primary {
+        padding: 12px;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+        color: #fff;
+        background: #008ed6;
+        border-color: #008ed6;
+        border-radius: 5px;
+        margin-left: 15px;
+        transition: .5s;
+    }
+    .price-section .price-inner h1 {
+        font-size: 50px;
+        font-weight: 600;
+        margin-bottom: 0px;
+        color: #000;
+    }
+    .aboutlong-section .title h2 {
+        font-size: 35px;
+    }
+    .title h2 {
+        font-size: 42px;
+        line-height: 52px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #000;
+        margin-bottom: 15px;
+    }
+    .price-section .price-inner h1 {
+        font-size: 50px;
+        font-weight: 600;
+        margin-bottom: 0px;
+        color: #000;
+    }
+}
+/* mobile phone & low resulation tablet end */
+/* tablet & mini notebook start */
+@media ( min-width: 768px ){
+    .menu .navbar-light .navbar-nav .nav-link {
+        color: #fff;
+        font-size: 17px;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin: 0px 0px 0px 20px;
+    }
+    .menu .navbar-light .navbar-nav .nav-link.active {
+        background: url(../image/border.png) left bottom no-repeat;
+        background-size: auto;
+    }
+    .menu .navbar-light .navbar-nav .nav-link:hover {
+        background: url(../image/border.png) left bottom no-repeat;
+        background-size: auto;
+    }
+    .banner h5 {
+        font-size: 22px;
+        text-transform: uppercase;
+        line-height: 28px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        color: #008ed6;
+    }
+    .banner p {
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #999;
+    }.inner-btn .btn-primary {
+        padding: 16px;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+        color: #fff;
+        background: #008ed6;
+        border-color: #008ed6;
+        border-radius: 5px;
+        margin-right: 25px;
+        transition: .5s;
+    }
+    .inner-btn .btn-info {
+        padding: 16px;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+        color: #fff;
+        background: transparent;
+        border-color: #999;
+        border-radius: 5px;
+        transition: .5s;
+    }
+    .title h2 {
+        font-size: 42px;
+        line-height: 52px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #000;
+        margin-bottom: 15px;
+    }
+    .title h5 {
+        font-size: 24px;
+        text-transform: uppercase;
+        line-height: 30px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        color: #008ed6;
+    }
+    .inner-feature h4 {
+        font-size: 28px;
+        font-weight: 600;
+        color: #000;
+    }
+    
+    .inner-feature p {
+        font-size: 24px;
+        font-weight: 400;
+        color: #999;
+    }
+    .aboutlong-section .icon-list li img {
+        color: #008ed6;
+        padding: 10px;
+        height: 45px;
+    }
+    .aboutlong-section .icon-list li a {
+        color: black;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .aboutlong-section p {
+        font-size: 24px;
+        color: #999;
+    }
+    .aboutshort-section p {
+        font-size: 24px;
+        color: #999;
+    }
+    .testimonial-section .owl-theme .item h4{
+        font-size: 24px
+    }
+    .testimonial-section .owl-theme .item h5{
+        font-size: 22px;
+        line-height: 32px;
+    }
+    .testimonial-section .owl-theme .item p{ 
+        font-size: 19px;
+        line-height: 29px;
+    }
+    .see-section h2 {
+        font-size: 32px;
+        font-weight: 300;
+        margin-bottom: 0px;
+        color: #fff;
+        margin-top: 10px;
+        text-align: center;
+        line-height: 42px;
+    }
+    .see-section .inner-btn {
+        width: 100%;
+        padding: 0px;
+        line-height: 6;
+        text-align: center;
+    }
+    .price-box .price-inner p {
+        font-size: 21px;
+        color: #999;
+        margin: -6px 0px 0px;
+    }
+    .price-section .price-inner h1 {
+        font-size: 70px;
+        font-weight: 600;
+        margin-bottom: 0px;
+        color: #000;
+    }
+    .price-section .price-inner h1 sup {
+        top: -0.4em;
+        font-size: 42px;
+        font-weight: 500;
+    }
+    .price-section .price-head h2 {
+        font-size: 35px;
+        font-weight: 700;
+        margin-bottom: 0px;
+        color: #000;
+        transition: .5s;
+    }
+    .price-box .price-content p {
+        font-size: 24px;
+        line-height: 34px;
+        color: #999;
+        margin-bottom: 35px;
+    }
+    .price-content .btn-info {
+        padding: 18px;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+        color: #008ed6;
+        background: transparent;
+        border-color: #999;
+        border-radius: 5px;
+        transition: .5s;
+    }
+    .contact-us .info p {
+        font-size: 27px;
+        padding: 30px;
+        color: #999;
+    }
+    .contact-us .info .fa {
+        font-size: 55px;
+        color: #008ed6;
+        margin-bottom: 20px;
+    }
+}
+/* tablet & mini notebook start */
+
+
+@media ( min-width: 1024px ) {
+    
+    
+    .menu .navbar-light .navbar-nav .nav-link {
+        color: #fff;
+        font-size: 21px;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin: 0px 0px 0px 20px;
+    }
+    .banner p {
+        font-size: 25px;
+        line-height: 35px;
+        font-weight: 400;
+        color: #999;
+    }
+    .banner h5 {
+        font-size: 23px;
+        text-transform: uppercase;
+        line-height: 28px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        color: #008ed6;
+    }
+    .see-section .inner-btn {
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+    }
+    .inner-btn .btn-primary {
+        padding: 12px 18px;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+        color: #fff;
+        background: #008ed6;
+        border-color: #008ed6;
+        border-radius: 5px;
+        margin-right: 25px;
+        transition: .5s;
+    }
+    .inner-btn .btn-info {
+        padding: 12px 18px;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+        color: #fff;
+        background: transparent;
+        border-color: #999;
+        border-radius: 5px;
+        transition: .5s;
+    }
+    
+    .title h5 {
+        font-size: 23px;
+        text-transform: uppercase;
+        line-height: 33px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        color: #008ed6;
+    }
+    
+    .inner-feature p {
+        font-size: 20px;
+        font-weight: 400;
+        color: #999;
+    }
+    .inner-feature h4 {
+        font-size: 27px;
+        font-weight: 600;
+        color: #000;
+    }
+    .aboutlong-section p {
+        font-size: 25px;
+        color: #999;
+    }
+    .aboutlong-section .icon-list li img {
+        color: #008ed6;
+        padding: 10px;
+        height: 47px;
+    }
+    .aboutlong-section .icon-list li a {
+        color: black;
+        font-size: 22px;
+    }
+.see-section .inner-btn .btn-primary {
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #008ed6;
+    border-color: #008ed6;
+    border-radius: 5px;
+    margin-left: 15px;
+    transition: .5s;
+}
+.see-section .inner-btn .btn-info {
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #fff;
+    background: transparent;
+    border-color: #999;
+    border-radius: 5px;
+    transition: .5s;
+}
+.aboutshort-section p {
+    font-size: 26px;
+    color: #999;
+}
+.price-section .price-inner h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    color: #000;
+}
+.price-box .price-content p {
+    font-size: 20px;
+    line-height: 30px;
+    color: #999;
+    margin-bottom: 35px;
+}
+.price-box .price-inner p {
+    font-size: 19px;
+    color: #999;
+    margin: -6px 0px 0px;
+}
+.price-content .btn-info {
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #008ed6;
+    background: transparent;
+    border-color: #999;
+    border-radius: 5px;
+    transition: .5s;
+}
+.contact-us .info .fa {
+    font-size: 52px;
+    color: #008ed6;
+    margin-bottom: 20px;
+}
+.contact-us .info p {
+    font-size: 22px;
+    color: #999;
+}
+.main-form .form-control {
+    width: 100%;
+    padding: 13px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #999;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid #999;
+}
+.main-form .btn-primary {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #008ed6;
+    border-color: #008ed6;
+    border-radius: 5px;
+    transition: .5s;
+}
+.inner-feature:hover{
+    color: black;
+    background: whitesmoke;
+    border-color: rgb(214, 213, 213);
+    border-radius: 20px;
+}
+}
